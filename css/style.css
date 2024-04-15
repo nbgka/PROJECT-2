@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Dosis;
+    src: url(../media/fonts/Dosis.ttf);
+}
+@font-face {
+    font-family: TRLight;
+    src: url(../media/fonts/TsukimiRounded-Light.ttf);
+}
+@font-face {
+    font-family: TRRegular;
+    src: url(../media/fonts/TsukimiRounded-Regular.ttf);
+}
+
+@font-face {
+    font-family: GBold;
+    src: url(../media/fonts/Gayathri-Bold.ttf);
+}
+
+@font-face {
+    font-family: GRegular;
+    src: url(../media/fonts/Gayathri-Regular.ttf);
+}
+
+@font-face {
+    font-family: GThin;
+    src: url(../media/fonts/Gayathri-Thin.ttf);
+}
+
+body{
+    margin:0;
+}
+canvas{
+    display:block;
+}
+
+#custom-cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-image: url('../media/images/noun-cursor-1010278.png');
+    background-size: cover;
+    pointer-events: none;
+}
+
+#logo{
+    display: flex;
+    position: absolute;
+    width: 5%;
+    top: 5%;
+    left: 7%;
+    transform: translate(-50%,-15%);
+    color: white;
+}
+
+#coPro{
+    display: flex;
+    font-family: 'TRLight';
+    position: absolute;
+    top: 4.7%;
+    left: 16%;
+    transform: translate(-50%,-15%);
+    color: white;
+}
+
+#location{
+    display: flex;
+    font-family: 'GThin';
+    font-size: 0.8rem;
+    position: absolute;
+    top: 4.7%;
+    right: 2%;
+    transform: translate(-50%,-15%);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    animation: hoverChange 1s;
+}
+
+#nav{
+    padding: 10%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: left; /* Center horizontally */
+    font-family: 'Dosis';
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translate(-50%, -50%);
+    color: white; 
+}
+
+#homeMessage{
+    display: flex;
+    font-family: 'GThin';
+    text-shadow: 0px 0px 20px #ffffff7d, 0px 0px 120px #00d9ff7c;
+    font-size: 5rem;
+    text-align: right;
+    position: absolute;
+    width: 60%;
+    top: 65%;
+    right: 0%;
+    transform: translate(-10%,-5%);
+    color: rgb(255, 255, 255);
+}
+
+#homeMessage2{
+    display: flex;
+    font-family: 'GThin';
+    text-shadow: 0px 0px 20px #ffffff7d, 0px 0px 120px #00d9ff7c;
+    font-size: 1.5rem;
+    text-align: left;
+    position: absolute;
+    width: 18%;
+    top: 76%;
+    left: 6.5%;
+    transform: translate(-10%,-5%);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes hoverChange {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #a51f91;
+    }
+}
